@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>义卖菜单 | 神秘小面包</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, sans-serif;
+        }
+        /* 页面淡入动画 */
+        body {
+            background-color: #fef7f0;
+            padding: 30px 15px;
+            text-align: center;
+            animation: fadeIn 0.6s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #7b3f22;
+            margin-bottom: 24px;
+            font-size: 2rem;
+        }
+        .poster-img {
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+            margin-bottom: 32px;
+        }
+        .back-btn {
+            display: inline-block;
+            padding: 14px 36px;
+            font-size: 1.1rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: #8b5a3c;
+            color: white;
+            transition: all 0.25s ease;
+        }
+        .back-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+        }
+        .back-btn:active {
+            transform: translateY(1px);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>义卖菜单</h1>
+        <!-- 图片放在img文件夹，文件名保持一致 -->
+        <img class="poster-img" src="img/er.png" alt="义卖菜单">
+        <!-- 回到首页，地址是你首页仓库的Pages地址 -->
+        <a class="back-btn" href="https://yimai.github.io/image.github.io/">返回首页</a>
+    </div>
+</body>
+</html>
